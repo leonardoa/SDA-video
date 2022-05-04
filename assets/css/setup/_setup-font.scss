@@ -1,0 +1,38 @@
+
+
+
+@font-face {
+    font-family: "font-standard";
+    src: url("~assets/fonts/Sono-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-family-default: "font-standard",
+sans-serif;
+$font-size-h2: 28px;
+$font-size-h6: 11px;
+
+
+h1,
+h2,
+h4,
+h5,
+h6,
+li {
+    font-size: $font-size-h2;
+    font-family: "font-standard", sans-serif;
+    line-height: 120%;
+    font-weight: default;
+}
+
+p,h6 {
+    font-size: $font-size-h6;
+    font-family: "font-standard", monospace;
+    line-height: 120%;
+}
+
+h3 {
+    font-size: 20px;
+}
+

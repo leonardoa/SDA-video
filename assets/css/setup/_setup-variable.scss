@@ -1,0 +1,14 @@
+/* breakpoints */
+$breakpoint-small: 768px;
+$breakpoint-medium: 992px;
+$breakpoint-large: 1600px;
+$breakpoint-xlarge: 1800px;
+
+/* grid */
+$grid-cols: 12;
+$grid-gutter: 10px;
+
+:root {
+    --main-bg-color: rgb(252, 252, 252);
+    --main-color: rgb(40, 40, 40);
+}
