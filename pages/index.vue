@@ -3,22 +3,37 @@
         <div id="frame">
             <div class="item item1">
                 <video muted id="video1">
-                    <source src="~/static/howtowin6.mp4" type="video/mp4">
+                    <source src="~/static/nordisk/nordisk1.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="item item2">
                 <video muted id="video2">
-                    <source src="~/static/howtowin5.mp4" type="video/mp4">
+                    <source src="~/static/nordisk/nordisk3.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="item item3">
                 <video muted id="video3">
-                    <source src="~/static/howtowin4.mp4" type="video/mp4">
+                    <source src="~/static/nordisk/nordisk2.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="item item4">
                 <video muted id="video4">
-                    <source src="~/static/howtowin6.mp4" type="video/mp4">
+                    <source src="~/static/nordisk/nordisk7.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="item item5">
+                <video muted id="video5">
+                    <source src="~/static/nordisk/nordisk6.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="item item6">
+                <video muted id="video6">
+                    <source src="~/static/nordisk/nordisk5.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="item item7">
+                <video muted id="video7">
+                    <source src="~/static/nordisk/nordisk1.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
@@ -54,6 +69,16 @@ export default {
         let item4 = document.querySelectorAll('.item4')[0];
         let video4 = document.querySelector('#video4');
 
+        let item5 = document.querySelectorAll('.item5')[0];
+        let video5 = document.querySelector('#video5');
+
+        let item6 = document.querySelectorAll('.item6')[0];
+        let video6 = document.querySelector('#video6');
+
+        let item7 = document.querySelectorAll('.item7')[0];
+        let video7 = document.querySelector('#video7');
+
+        //1
         //mostriamo il primo video
         setTimeout(() => {
             video1.play();
@@ -68,6 +93,7 @@ export default {
             item1.classList.add("hide");
         }, wait * 1 + delta)
 
+        //2
         //mostriamo il secondo video
         setTimeout(() => {
             video2.play();
@@ -82,6 +108,7 @@ export default {
             item2.classList.add("hide");
         }, wait * 2 + delta)
 
+        //3
         //mostriamo il terzo video
         setTimeout(() => {
             video3.play();
@@ -96,6 +123,7 @@ export default {
             item3.classList.add("hide");
         }, wait * 3 + delta)
 
+        //4
         //mostriamo il quarto video
         setTimeout(() => {
             video4.play();
@@ -109,6 +137,54 @@ export default {
         setTimeout(() => {
             item4.classList.add("hide");
         }, wait * 4 + delta)
+
+        //5
+        //mostriamo il quinto video
+        setTimeout(() => {
+            video5.play();
+            item5.classList.add("show");
+        }, wait * 4 + delta)
+
+        setTimeout(() => {
+            item5.classList.add("press");
+        }, wait * 5)
+
+        setTimeout(() => {
+            item5.classList.add("hide");
+        }, wait * 5 + delta)
+
+        //6
+        //mostriamo il sesto video
+        setTimeout(() => {
+            video6.play();
+            item6.classList.add("show");
+        }, wait * 5 + delta)
+
+        setTimeout(() => {
+            item6.classList.add("press");
+        }, wait * 6)
+
+        setTimeout(() => {
+            item6.classList.add("hide");
+        }, wait * 6 + delta)
+
+        //7
+        //mostriamo il settimo video
+        setTimeout(() => {
+            video7.play();
+            item7.classList.add("show");
+        }, wait * 6 + delta)
+
+        setTimeout(() => {
+            item7.classList.add("press");
+        }, wait * 7)
+
+        setTimeout(() => {
+            item7.classList.add("hide");
+        }, wait * 7 + delta)
+
+
+
     }
 }
 </script>
